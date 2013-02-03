@@ -8,12 +8,15 @@ Usage
 
 To initiate the slider use to following command: 
 
-  $('#element').galSlider();
-
+```js
+$('#element').galSlider();
+```
 
 Todo List
 -------
 
+* CSS
+* Sample Page
 * Documentation
 * Comments
 * Slider Options
