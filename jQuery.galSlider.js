@@ -83,7 +83,11 @@ jQuery.fn.galSlider = function() {
 		function () {
 			$('.gal-nav').fadeOut(500);
   		}
-);
-	
+		);
+		
+	$('.gs-thumb').click(function() {
+		goto = $(this).attr('gotoImg');
+			$('.gal-slider').animate({ 'left':containerWidth*(goto)*(0-1)},500);
+			currImg = goto;
+	});
 }
-$('.gallery').galSlider();
