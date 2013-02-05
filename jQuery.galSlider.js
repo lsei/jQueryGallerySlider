@@ -1,3 +1,12 @@
+/** jQuery Gallery Slider Plugin
+* http://github.com/lsei/jQueryGallerySlider
+*
+* Written by Lucas Seidenfaden
+* http://www.lucasseidenfaden.com
+*
+* Released under the MIT license:
+* http://www.opensource.org/licenses/mit-license.php
+*/
 jQuery.fn.galSlider = function() {
 
 	var galname = $(this).selector; // Get the selector so that we can use it the next functions. 
@@ -96,7 +105,6 @@ jQuery.fn.galSlider = function() {
 			currImg -= 1;
 		}
 	});
-
 	// Here we set the listener for the hover event. 
 	$(gal).hover(function () {
 			$('.gal-nav').fadeIn(500); 
@@ -111,5 +119,5 @@ jQuery.fn.galSlider = function() {
 		goto = $(this).attr('gotoImg');
 			$('.gal-slider').animate({ 'left':containerWidth*(goto)*(0-1)},500);
 			currImg = goto;
-	});
+	}); 
 }
