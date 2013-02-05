@@ -99,13 +99,14 @@ jQuery.fn.galSlider = function() {
 
 	// Here we set the listener for the hover event. 
 	$(gal).hover(function () {
-			$('.gal-nav').fadeIn(500);
+			$('.gal-nav').fadeIn(500); 
 		},
 		function () {
 			$('.gal-nav').fadeOut(500);
   		}
 		);
 		
+		// This final click event listener listens to click on the small image thumbnails. I had added pseudo-attribute gotoImg in which we have the number for the image which the slider should goto. This number is then again multiplied by the container width in order to find the correct 'left' value to slide to. 
 	$('.gs-thumb').click(function() {
 		goto = $(this).attr('gotoImg');
 			$('.gal-slider').animate({ 'left':containerWidth*(goto)*(0-1)},500);
