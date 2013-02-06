@@ -28,6 +28,12 @@ To initiate the slider use to following command:
 $('#element').galSlider();
 ```
 
+You may wish to wait until thie images are finished loading:
+
+	$(document).ready(function() {
+	  // Handler for .ready() called.
+	});
+
 Todo List
 -------
 
