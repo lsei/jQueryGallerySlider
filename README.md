@@ -25,14 +25,14 @@ Put images into an element:
 To initiate the slider use to following command: 
 
 ```js
-$('#element').galSlider();
+$('.gallery').galSlider();
 ```
 
 If you have not specified the height and width of the images you will have to wait until the document is finished loading:
 
 ```js
 $(document).load(function() {
-	$('#element').galSlider();
+	$('.gallery').galSlider();
 });
 ```
 Todo List
