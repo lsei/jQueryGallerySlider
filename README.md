@@ -38,6 +38,8 @@ $(document).load(function() {
 Todo List
 -------
 
+* Touch Swipe
+* Resize & recalculate on page resize
 * CSS
 * Sample Page
 * Documentation
